@@ -1,27 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/tentang', function () {
-    return view('pages.tentang');
-});
-
-Route::get('/layanan', function () {
-    return view('pages.layanan');
-});
-
-Route::get('/produk', function () {
-    return view('pages.produk');
-});
-
-Route::get('/kontak', function () {
-    return view('pages.kontak');
-});
-
-Route::get('/produk-detail', function () {
-    return view('pages.produk-detail');
-});
+Route::get('/', [PageController::class, 'beranda'])->name('beranda');
+Route::get('/tentang', [PageController::class, 'tentang'])->name('tentang');
+Route::get('/layanan', [PageController::class, 'layanan'])->name('layanan');
+Route::get('/produk', [PageController::class, 'produk'])->name('produk');
+Route::get('/produk-detail', [PageController::class, 'produkDetail'])->name('produk-detail');
+Route::get('/kontak', [PageController::class, 'kontak'])->name('kontak');
