@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@yield('title', 'PT Teknokrat Zamrud Integrasi')</title>
     <meta name="description" content="@yield('meta_desc', 'PT. Teknokrat Zamrud Integrasi - Penyedia dan instalasi produk Elektronika, Kelistrikan, Teknologi Informatika, Audio Video, Dekorasi Interior, Furnitur & Alat Tulis Kantor.')">
-    <link rel="icon" type="image/png" href="{{ asset('images/logo-favicon.png') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('images/logo/logo-dark.png') }}" />
 
     {{-- Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-    {{-- Libraries --}}
-    <script src="https://cdn.tailwindcss.com"></script>
+    {{-- Vite (Tailwind CSS + JS) --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -71,7 +71,7 @@
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="{{ route('beranda') }}" class="flex items-center gap-2.5">
                 <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo TZI">
+                    <img src="{{ asset('images/logo/logo.png') }}" alt="Logo Teknokrat Zamrud Integrasi">
                 </div>
                 <div class="leading-tight uppercase">
                     <p class="text-white text-sm font-bold tracking-wide text-center">Teknokrat</p>

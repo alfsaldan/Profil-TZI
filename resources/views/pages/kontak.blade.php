@@ -3,10 +3,10 @@
 @section('meta_desc', 'Hubungi PT. Teknokrat Zamrud Integrasi untuk konsultasi dan penawaran layanan.')
 
 @section('head')
-<style>
-.hero-bg {
+    <style>
+        .hero-bg {
             position: relative;
-            background: linear-gradient(to right, rgba(10, 22, 40, 0.95) 30%, rgba(10, 22, 40, 0.4) 60%, rgba(10, 22, 40, 0.2) 100%), url('https://images.unsplash.com/photo-1638262052640-82e94d64664a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background: linear-gradient(to right, rgba(10, 22, 40, 0.95) 30%, rgba(10, 22, 40, 0.4) 60%, rgba(10, 22, 40, 0.2) 100%), url("{{ asset('images/hero/kontak.webp') }}");
             background-size: cover;
             background-position: center;
         }
@@ -41,16 +41,6 @@
             outline: none;
         }
 
-        
-
-        
-
-        
-
-        
-
-        
-
         .custom-shape-divider-top-1715243168 {
             position: absolute;
             top: 0;
@@ -70,12 +60,12 @@
         .custom-shape-divider-top-1715243168 .shape-fill {
             fill: #FFFFFF;
         }
-</style>
+    </style>
 @endsection
 
 @section('content')
 
-<!-- ── PAGE HERO ── -->
+    <!-- ── PAGE HERO ── -->
     <section class="hero-bg min-h-[40vh] flex items-center pt-20 relative overflow-hidden">
         <div class="max-w-6xl mx-auto px-6 w-full py-20 relative z-10 text-center md:text-left">
             <div data-aos="fade-up">
@@ -95,8 +85,7 @@
 
         <!-- Bottom Curve Shape -->
         <div class="custom-shape-divider-bottom-1715243168">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path
                     d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
                     class="shape-fill"></path>
@@ -119,8 +108,7 @@
 
                     <div class="flex items-start gap-5">
                         <div class="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                            <iconify-icon icon="solar:map-point-bold-duotone"
-                                class="text-sky-600 text-2xl"></iconify-icon>
+                            <iconify-icon icon="solar:map-point-bold-duotone" class="text-sky-600 text-2xl"></iconify-icon>
                         </div>
                         <div>
                             <h4 class="text-lg font-black uppercase text-slate-900 mb-1">Alamat Kantor</h4>
@@ -154,10 +142,18 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- Map inside Left Column -->
+                    <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-xl" data-aos="zoom-in">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6656877650003!2d101.42478707424073!3d0.5011711637173792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5af3a3a06227f%3A0xeb4b783da26fe737!2sPT%20Teknokrat%20Zamrud%20Integrasi!5e0!3m2!1sen!2sid!4v1778666586210!5m2!1sen!2sid"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
 
                 <!-- Contact Form -->
-                <div class="lg:col-span-2 bg-slate-50 p-3 sm:p-6 md:p-10 sm:rounded-3xl border border-slate-100"
+                <div class="lg:col-span-2 bg-slate-50 p-3 sm:p-6 md:p-10 sm:rounded-3xl border border-slate-100 h-fit"
                     data-aos="fade-left">
                     <h2 class="text-2xl md:text-3xl font-black uppercase text-slate-900 mb-6 md:mb-8">Kirim <span
                             class="text-sky-600">Pesan</span></h2>
@@ -201,21 +197,4 @@
             </div>
         </div>
     </section>
-
-    <!-- ── MAP SECTION ── -->
-    <section class="pb-24 bg-white">
-        <div class="max-w-6xl mx-auto sm:px-6" data-aos="fade-up">
-            <div class="rounded overflow-hidden border border-slate-200 shadow-2xl shadow-slate-200/50">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.67384351608!2d101.4860882740333!3d0.4731885637256195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ae8f26075191%3A0xe67f33918a221f70!2sJl.%20Gunung%20Bendahara%20No.16A%2C%20Pematang%20Kapau%2C%20Kec.%20Kulim%2C%20Kota%20Pekanbaru%2C%20Riau%2028289!5e0!3m2!1sid!2sid!4v1715264350123!5m2!1sid!2sid"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    
-
 @endsection
-
